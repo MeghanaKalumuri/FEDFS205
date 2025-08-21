@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("<h2>Creating Dates</h2>");
+        let now=new Date();
+        document.write("Current Date & time: "+now +"<br><br>");
+         let specificDate = new Date(2029,4,13);
+         document.write("Specific date: "+ specificDate +"<br><br>");
+         let dateFromString = new Date;("1997-04-13T10:30:00");
+         document.write("From String: " + dateFromString + "<br><br>");
+         let timeStampDate = new Date(17235300000007);
+         document.write("From timestamp: "+ timeStampDate +"<br><br>");
+         document.write("year: " +now.getFullYear()+"<br>");
+         document.write("hour: " +now.getHours()+"<br>");
+         document.write("date: " +now.getDate()+"<br>");
+         document.write("sec: "+now.getSeconds()+"<br>");
+         document.write("min: "+now.getMinutes()+"<br>");
+         document.write("Set the date"+"<br>");
+         let d = new Date();
+         d.setFullYear(2059);
+         d.setMonth(4);
+         d.setDate(13);
+         d.setHours(1);
+         d.setMinutes(1);
+         document.write("Modified date: "+ d +"<br>");
+         document.write("<h2>Formatting Dates<//h2>");
+            document.write("Date: " +now.toLocaleDateString()+"<br>");
+            document.write("Date: " +now.toLocaleTimeString()+"<br>");
+            
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num =[10,20,30,40];
+        document.write(typeof num +"<br>");
+        //1.normal for loop
+        for(let i=0;i<num.length;i++){
+            document.write("index: "+i+" value: "+num[i]+"<br>");
+        }
+       // 2.for in(with index iteration)
+        document.write("<h2>For in</h2>"+"<br>");
+        for(let index in num){
+            document.write("index: "+index+" value: "+num[index]+"<br>")
+        }
+        // 3. for of(only for values)
+        document.write("<h2>For of</h2>"+"<br>");
+         for(let value of num){
+            document.write(" value: "+value+"<br>");
+        }
+        // 4.for each-interms of function(array-specific)(predefined method)
+         document.write("<h2>For each</h2>"+"<br>");
+         num.forEach(function(value,index){
+            document.write("index: "+index+" value: "+value+"<br>");
+        });
+        // 5. Example with list(objects)
+        let student={name:"Regina",age:25,status:"married to john"};
+        for(let key in student){
+            document.write(key+":"+student[key]+"<br>");
+        }
+        // 6.for of works on iterable objects like arrays,strings,maps,sets
+
+    </script>
+</body>
+</html>
