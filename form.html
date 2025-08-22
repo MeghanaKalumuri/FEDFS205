@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Demo</title>
+</head>
+<body>
+    <h2>Registraton Form</h2>
+    <form action="success.html">
+      <label for="fn">First Name:</label>
+      <input type="text" id="fn" name="first name" required>
+<br><br>
+      <label for="fn">Last Name:</label>
+      <input type="text" id="fn" name="last name" required>
+      <br><br>
+      <label for="gn">Gender:</label>
+      <input type="radio" name="gender" value="male" required>male
+      <input type="radio" name="gender" value="female" required>female
+      <input type="radio" name="gender" value="others" required>others
+      <br><br>
+      <label>Email:</label>
+      <input type="Email" required>
+      <br><br>
+      <label>contact:</label>
+      <input type="tel" pattern="[0-9]{10}" required>
+      <br><br>
+      <label>Date of Month:</label>
+      <input type="date" required>
+      <br><br>
+      <label>Address:</label>
+      <textarea rows="10"></textarea>
+      <br><br>
+      <label>Languages Knows:</label>
+      <input type="checkbox" required>Telugu
+      <input type="checkbox" required>English
+      <input type="checkbox" required>Hindi
+      <input type="checkbox" required>Tamil
+      <br><br>
+    <label>Branch:</label>
+    <select>
+          <option value="CSE">CSE</option>
+           <option value="EEE">EEE</option>
+            <option value="MECH">MECH</option>
+             <option value="AI">AI</option>
+              <option value="IT">IT</option>
+               </select>
+              <br><br>
+              <label>Upload Resume:</label>
+              <input type="file" required>
+              <br><br>
+              <button>submit</button>
+   
+    </form>
+</body>
+</html>
